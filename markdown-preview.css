@@ -1,0 +1,30 @@
+/* Wide, horizontally scrollable literature table in VS Code Markdown Preview. */
+.markdown-body {
+  overflow-x: auto;
+}
+
+.markdown-body table {
+  display: table;
+  width: max-content;
+  max-width: none;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  min-width: 190px;
+  max-width: 440px;
+  padding: 10px 14px;
+  vertical-align: top;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.65;
+}
+
+.markdown-body table th:first-child,
+.markdown-body table td:first-child {
+  min-width: 65px;
+  max-width: 85px;
+}
